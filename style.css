@@ -10,6 +10,12 @@
     margin: 20px auto;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
 h1 {
     font-weight: bold;
     text-align: center;
@@ -40,11 +46,6 @@ img {
     height: 325px;
 }
 
-/* section {
-    display: flex;
-    flex-direction: column;
-} */
-
 .articles {
     display: flex;
     flex-wrap: wrap;
@@ -66,6 +67,42 @@ article a {
 .product_description {
     color: #545559;
     font-size: 12px;
+}
+
+/* ARTICLE SEPALO */
+
+.sepalo {
+    position: relative;
+}
+
+.sepalo img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.sepalo:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+/* ARTICLE BULKY SEPALO */
+
+.bulky_sepalo {
+    position: relative;
+}
+
+.bulky_sepalo img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.bulky_sepalo:hover img:nth-child(2) {
+    opacity: 1;
 }
 
 /* ARTICLE JELLYFISH */
@@ -101,6 +138,24 @@ article a {
 }
 
 .apodemia:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+/* ARTICLE ARO SEPALO */
+
+.aro_sepalo {
+    position: relative;
+}
+
+.aro_sepalo img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.aro_sepalo:hover img:nth-child(2) {
     opacity: 1;
 }
 
@@ -140,6 +195,59 @@ article a {
     opacity: 1;
 }
 
+/* ARTICLE ARO SUCCULENTA */
+
+.aro_succulenta {
+    position: relative;
+}
+
+.aro_succulenta img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.aro_succulenta:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+/* ARTICLE APODEMIA KARNER */
+
+.apodemia_karner {
+    position: relative;
+}
+
+.apodemia_karner img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.apodemia_karner:hover img:nth-child(2) {
+    opacity: 1;
+}
+/* ARTICLE LARGOS LOFOTEN ISLAND */
+
+.largos_lofoten_island {
+    position: relative;
+}
+
+.largos_lofoten_island img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.largos_lofoten_island:hover img:nth-child(2) {
+    opacity: 1;
+}
+
 /* ARTICLE ROLL_VINE */
 
 .roll_vine {
@@ -155,6 +263,114 @@ article a {
 }
 
 .roll_vine:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+/* ARTICLE TRIPLE_SEPALO */
+
+.triple_sepalo {
+    position: relative;
+}
+
+.triple_sepalo img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.triple_sepalo:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+/* ARTICLE SAND DUST */
+
+.sand_dust {
+    position: relative;
+}
+
+.sand_dust img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.sand_dust:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+/* ARTICLE LINKED MARGARITA */
+
+.linked_margarita {
+    position: relative;
+}
+
+.linked_margarita img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.linked_margarita:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+/* ARTICLE ROSARIO MEDALLA MILAGROSA */
+
+.rosario_medalla_milagrosa {
+    position: relative;
+}
+
+.rosario_medalla_milagrosa img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.rosario_medalla_milagrosa:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+/* ARTICLE CADENA PLATA */
+
+.cadena_plata {
+    position: relative;
+}
+
+.cadena_plata img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.cadena_plata:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+/* ARTICLE LOFOTEN ISLAND */
+
+.lofoten_island {
+    position: relative;
+}
+
+.lofoten_island img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.lofoten_island:hover img:nth-child(2) {
     opacity: 1;
 }
 
