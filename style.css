@@ -4,11 +4,159 @@
 
 .main_container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 90%;
     height: 90%;
+    margin: 20px auto;
 }
 
 h1 {
     font-weight: bold;
+    text-align: center;
 }
+
+h3 {
+    color: #545559;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 1px solid #545559;
+    border-bottom: 1px solid #545559;
+
+}
+
+.articles_container div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    width: 20%;
+    padding: 2%;
+}
+
+img {
+    width: 275px;
+    height: 325px;
+}
+
+/* section {
+    display: flex;
+    flex-direction: column;
+} */
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article a {
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.product_title {
+    color: #545559;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.product_description {
+    color: #545559;
+    font-size: 12px;
+}
+
+/* ARTICLE JELLYFISH */
+
+.jellyfish {
+    position: relative;
+}
+
+.jellyfish img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.jellyfish:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+/* ARTICLE APODEMIA */
+
+.apodemia {
+    position: relative;
+}
+
+.apodemia img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.apodemia:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+/* ARTICLE NEFERTITI */
+
+.nefertiti {
+    position: relative;
+}
+
+.nefertiti img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.nefertiti:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+/* ARTICLE MARGARITA */
+
+.margarita {
+    position: relative;
+}
+
+.margarita img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.margarita:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+/* ARTICLE ROLL_VINE */
+
+.roll_vine {
+    position: relative;
+}
+
+.roll_vine img:nth-child(2) {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: opacity ease 0.4s;
+}
+
+.roll_vine:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+
+
