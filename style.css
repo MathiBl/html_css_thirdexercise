@@ -116,6 +116,7 @@ article {
 
 article img {
   width: 100%;
+  /* min-width: 250px; */
   height: 330px;
 }
 
