@@ -1,271 +1,1109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi_Tienda</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
-
+  <body>
     <div class="main_container">
+      <nav class="left_menu">
+        <a id="new_product" href="#novedades">Novedades</a>
+        <a href="#pendientes">Pendientes</a>
+        <a href="#collares">Collares</a>
+        <a href="#anillos">Anillos</a>
+        <a href="#pulseras">Pulseras</a>
+        <a href="#relojeria">Relojería</a>
+        <a id="fine_jewellery" href="#alta_joyeria">Alta joyería</a>
+      </nav>
 
-        <nav>
-                <a href="#novedades">Novedades</a>
-                <a href="#pendientes">Pendientes</a>
-                <a href="#collares">Collares</a>
-                <a href="#anillos">Anillos</a>
-                <a href="#pulseras">Pulseras</a>
-                <a href="#relojeria">Relojería</a>
-                <a href="#hogar_accesorios">Hogar & Accesorios</a>
-                <a href="#alta_joyeria">Alta joyería</a>
-        </nav>
-        
+      <div class="menu_top">
+        <img src="logo_img.png" alt="logo_mi_tienda" />
         <h1>Mi_tienda</h1>
+      </div>
 
-        <div class="articles_container">
-
-            <h3 id="novedades">Novedades</h3>
-
-            <div class="novedades">
-
-        <section class="articles">
-            <article class="sepalo">
-                    <a href="">
-                        <img src="brazalete_sepalo.jpg" alt="brazalete_sepalo">
-                        <img src="brazalete_sepalo2.jpg" alt="brazalete_sepalo2">
-                        <p class="product_title">Brazalete Sepalo</p>
-                        <p class="product_description">Baño Oro 18k <br> 199.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
-        </section>
-
-        <section class="articles">
-            <article class="bulky_sepalo">
-                    <a href="">
-                        <img src="anillo_bulky_sepalo.jpg" alt="anillo_bulky_sepalo">
-                        <img src="anillo_bulky_sepalo2.jpg" alt="anillo_bulky_sepalo2">
-                        <p class="product_title">Anillo Bulky Sepalo</p>
-                        <p class="product_description">Baño Oro 18k <br> 149.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
-        </section>
-
+      <div class="menu_top_right">
+        <div class="search">
+          <span class="material-symbols-outlined">search</span>
+          <input type="search" placeholder="Buscar" />
         </div>
+        <span class="material-symbols-outlined">person</span>
+        <span class="material-symbols-outlined">shopping_cart</span>
+      </div>
 
-            <h3 id="pendientes">Pendientes</h3>
-
-            <div class="pendientes">
-
+      <div class="articles_container">
         <section class="articles">
-            <article class="jellyfish">
-                    <a href="">
-                        <img src="pendientes_largos_jellyfish.webp" alt="pendientes_largos_jellyfish">
-                        <img src="pendientes_largos_jellyfish2.webp" alt="pendientes_largos_jellyfish2">
-                        <p class="product_title">Pendientes Largos Jellyfish</p>
-                        <p class="product_description">Baño Oro 18k <br> 199.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
-        </section>
+          <h3 id="novedades">Novedades</h3>
 
-        <section class="articles">
+          <div class="products">
             <article class="apodemia">
-                    <a href="">
-                        <img src="pendientes_largos_apodemia.jpg" alt="pendientes_largos_apodemia">
-                        <img src="pendientes_largos_apodemia2.jpg" alt="pendientes_largos_apodemia2">
-                        <p class="product_title">Pendientes Largos Apodemia</p>
-                        <p class="product_description">Baño Oro 18k <br> 189.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
-        </section>
+              <a href="">
+                <img
+                  src="pendientes_largos_apodemia.jpg"
+                  alt="pendientes_largos_apodemia"
+                />
+                <img
+                  src="pendientes_largos_apodemia2.jpg"
+                  alt="pendientes_largos_apodemia2"
+                />
+                <p class="product_title">
+                  Pendientes Largos Apodemia <span id="icon_new">New</span>
+                </p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  189.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
 
-        <section class="articles">
-            <article class="aro_sepalo">
-                    <a href="">
-                        <img src="pendientes_aro_sepalo.jpg" alt="pendientes_aro_sepalo">
-                        <img src="pendientes_aro_sepalo2.jpg" alt="pendientes_aro_sepalo2">
-                        <p class="product_title">Pendientes Aro Sepalo</p>
-                        <p class="product_description">Baño Oro 18k <br> 79.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
-        </section>
-
-        <section class="articles">
-            <article class="nefertiti">
-                    <a href="">
-                        <img src="pendientes_aro_bulky_nefertiti.webp" alt="pendientes_aro_bulky_nefertiti">
-                        <img src="pendientes_aro_bulky_nefertiti2.webp" alt="pendientes_aro_bulky_nefertiti2">
-                        <p class="product_title">Pendientes Aro Bulky Nefertiti</p>
-                        <p class="product_description">Baño Oro 18k <br> 99.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
-        </section>
-
-        <section class="articles">
-            <article class="margarita">
-                    <a href="">
-                        <img src="pendientes_aro_margarita.jpg" alt="pendientes_aro_margarita">
-                        <img src="pendientes_aro_margarita2.jpg" alt="pendientes_aro_margarita2">
-                        <p class="product_title">Pendientes Aro Margarita</p>
-                        <p class="product_description">Baño Oro 18k <br> 99.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
-        </section>
-
-        <section class="articles">
-            <article class="aro_succulenta">
-                    <a href="">
-                        <img src="pendientes_aro_succulenta.webp" alt="pendientes_aro_succulenta">
-                        <img src="pendientes_aro_succulenta2.webp" alt="pendientes_aro_succulenta2">
-                        <p class="product_title">Pendientes Aro Succulenta</p>
-                        <p class="product_description">Baño Oro 18k <br> 79.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
-        </section>
-
-        <section class="articles">
-            <article class="apodemia_karner">
-                    <a href="">
-                        <img src="pendientes_apodemia_karner.jpg" alt="pendientes_apodemia_karner">
-                        <img src="pendientes_apodemia_karner2.webp" alt="pendientes_apodemia_karner2">
-                        <p class="product_title">Pendientes Apodemia Karner</p>
-                        <p class="product_description">Baño Oro 18k <br> 169.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
-        </section>
-
-        <section class="articles">
-            <article class="largos_lofoten_island">
-                    <a href="">
-                        <img src="pendientes_largos_lofoten_island.jpg" alt="pendientes_largos_lofoten_island">
-                        <img src="pendientes_largos_lofoten_island2.jpg" alt="pendientes_largos_lofoten_island2">
-                        <p class="product_title">Pendientes Largos Lofoten Island</p>
-                        <p class="product_description">Baño Oro 18k <br> 149.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
-        </section>
-            </div>
-
-            <h3 id="collares">Collares</h3>
-
-            <div class="collares">
-
-        <section class="articles">
             <article class="roll_vine">
-                    <a href="">
-                        <img src="collar_roll_vine_multicolor.webp" alt="collar_roll_vine_multicolor">
-                        <img src="collar_roll_vine_multicolor2.webp" alt="collar_roll_vine_multicolor2">
-                        <p class="product_title">Collar Roll Vine Multicolor</p>
-                        <p class="product_description">Baño Oro 18k <br> 300.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
+              <a href="">
+                <img
+                  src="collar_roll_vine_multicolor.webp"
+                  alt="collar_roll_vine_multicolor"
+                />
+                <img
+                  src="collar_roll_vine_multicolor2.webp"
+                  alt="collar_roll_vine_multicolor2"
+                />
+                <p class="product_title">
+                  Collar Roll Vine Multicolor <span id="icon_new">New</span>
+                </p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  300.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="anillo_cadena">
+              <a href="">
+                <img src="anillo_cadena.webp" alt="anillo_cadena" />
+                <img src="anillo_cadena2.webp" alt="anillo_cadena2" />
+                <p class="product_title">
+                  Anillo Cadena <span id="icon_new">New</span>
+                </p>
+                <p class="product_description">
+                  Plata 925 | Topacio Blanco<br />
+                  149.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="bulky_sepalo">
+              <a href="">
+                <img src="anillo_bulky_sepalo.jpg" alt="anillo_bulky_sepalo" />
+                <img
+                  src="anillo_bulky_sepalo2.jpg"
+                  alt="anillo_bulky_sepalo2"
+                />
+                <p class="product_title">
+                  Anillo Bulky Sepalo <span id="icon_new">New</span>
+                </p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  149.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="sepalo">
+              <a href="">
+                <img src="brazalete_sepalo.jpg" alt="brazalete_sepalo" />
+                <img src="brazalete_sepalo2.jpg" alt="brazalete_sepalo2" />
+                <p class="product_title">
+                  Brazalete Sepalo <span id="icon_new">New</span>
+                </p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  199.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="rigido_nefertiti">
+              <a href="">
+                <img
+                  src="brazalete_rigido_nefertiti.webp"
+                  alt="brazalete_rigido_nefertiti"
+                />
+                <img
+                  src="brazalete_rigido_nefertiti2.webp"
+                  alt="brazalete_rigido_nefertiti2"
+                />
+                <p class="product_title">
+                  Brazalete Rígido Nefertiti <span id="icon_new">New</span>
+                </p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  149.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="grabado_reloj">
+              <a href="">
+                <img src="grabado_reloj.webp" alt="grabado_reloj" />
+                <img src="grabado_reloj2.webp" alt="grabado_reloj2" />
+                <p class="product_title">
+                  Grabado Reloj <span id="icon_new">New</span>
+                </p>
+                <p class="product_description">
+                  Grabado <br />
+                  10.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+          </div>
         </section>
 
         <section class="articles">
+          <h3 id="pendientes">Pendientes</h3>
+
+          <div class="products">
+            <article class="apodemia">
+              <a href="">
+                <img
+                  src="pendientes_largos_apodemia.jpg"
+                  alt="pendientes_largos_apodemia"
+                />
+                <img
+                  src="pendientes_largos_apodemia2.jpg"
+                  alt="pendientes_largos_apodemia2"
+                />
+                <p class="product_title">
+                  Pendientes Largos Apodemia <span id="icon_new">New</span>
+                </p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  189.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="jellyfish">
+              <a href="">
+                <img
+                  src="pendientes_largos_jellyfish.webp"
+                  alt="pendientes_largos_jellyfish"
+                />
+                <img
+                  src="pendientes_largos_jellyfish2.webp"
+                  alt="pendientes_largos_jellyfish2"
+                />
+                <p class="product_title">Pendientes Largos Jellyfish</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  199.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="aro_sepalo">
+              <a href="">
+                <img
+                  src="pendientes_aro_sepalo.jpg"
+                  alt="pendientes_aro_sepalo"
+                />
+                <img
+                  src="pendientes_aro_sepalo2.jpg"
+                  alt="pendientes_aro_sepalo2"
+                />
+                <p class="product_title">Pendientes Aro Sepalo</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  79.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="nefertiti">
+              <a href="">
+                <img
+                  src="pendientes_aro_bulky_nefertiti.webp"
+                  alt="pendientes_aro_bulky_nefertiti"
+                />
+                <img
+                  src="pendientes_aro_bulky_nefertiti2.webp"
+                  alt="pendientes_aro_bulky_nefertiti2"
+                />
+                <p class="product_title">Pendientes Aro Bulky Nefertiti</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  99.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="margarita">
+              <a href="">
+                <img
+                  src="pendientes_aro_margarita.jpg"
+                  alt="pendientes_aro_margarita"
+                />
+                <img
+                  src="pendientes_aro_margarita2.jpg"
+                  alt="pendientes_aro_margarita2"
+                />
+                <p class="product_title">Pendientes Aro Margarita</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  99.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="aro_succulenta">
+              <a href="">
+                <img
+                  src="pendientes_aro_succulenta.webp"
+                  alt="pendientes_aro_succulenta"
+                />
+                <img
+                  src="pendientes_aro_succulenta2.webp"
+                  alt="pendientes_aro_succulenta2"
+                />
+                <p class="product_title">Pendientes Aro Succulenta</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  79.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="apodemia_karner">
+              <a href="">
+                <img
+                  src="pendientes_apodemia_karner.jpg"
+                  alt="pendientes_apodemia_karner"
+                />
+                <img
+                  src="pendientes_apodemia_karner2.webp"
+                  alt="pendientes_apodemia_karner2"
+                />
+                <p class="product_title">Pendientes Apodemia Karner</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  169.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="largos_lofoten_island">
+              <a href="">
+                <img
+                  src="pendientes_largos_lofoten_island.jpg"
+                  alt="pendientes_largos_lofoten_island"
+                />
+                <img
+                  src="pendientes_largos_lofoten_island2.jpg"
+                  alt="pendientes_largos_lofoten_island2"
+                />
+                <p class="product_title">Pendientes Largos Lofoten Island</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  149.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="articles">
+          <h3 id="collares">Collares</h3>
+
+          <div class="products">
+            <article class="roll_vine">
+              <a href="">
+                <img
+                  src="collar_roll_vine_multicolor.webp"
+                  alt="collar_roll_vine_multicolor"
+                />
+                <img
+                  src="collar_roll_vine_multicolor2.webp"
+                  alt="collar_roll_vine_multicolor2"
+                />
+                <p class="product_title">
+                  Collar Roll Vine Multicolor <span id="icon_new">New</span>
+                </p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  300.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
             <article class="triple_sepalo">
-                    <a href="">
-                        <img src="collar_triple_sepalo.jpg" alt="collar_triple_sepalo">
-                        <img src="collar_triple_sepalo2.jpg" alt="collar_triple_sepalo2">
-                        <p class="product_title">Collar Triple Sepalo</p>
-                        <p class="product_description">Baño Oro 18k <br> 200.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
-        </section>
+              <a href="">
+                <img
+                  src="collar_triple_sepalo.jpg"
+                  alt="collar_triple_sepalo"
+                />
+                <img
+                  src="collar_triple_sepalo2.jpg"
+                  alt="collar_triple_sepalo2"
+                />
+                <p class="product_title">Collar Triple Sepalo</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  200.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
 
-        <section class="articles">
             <article class="sand_dust">
-                    <a href="">
-                        <img src="collar_sand_dust.jpg" alt="collar_sand_dust">
-                        <img src="collar_sand_dust2.jpg" alt="collar_sand_dust2">
-                        <p class="product_title">Collar Sand Dust</p>
-                        <p class="product_description">Baño Oro 18k <br> 79.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
-        </section>
+              <a href="">
+                <img src="collar_sand_dust.jpg" alt="collar_sand_dust" />
+                <img src="collar_sand_dust2.jpg" alt="collar_sand_dust2" />
+                <p class="product_title">Collar Sand Dust</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  79.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
 
-        <section class="articles">
             <article class="linked_margarita">
-                    <a href="">
-                        <img src="collar_linked_margarita.jpg" alt="collar_linked_margarita">
-                        <img src="collar_linked_margarita2.webp" alt="collar_linked_margarita2">
-                        <p class="product_title">Collar Linked Margarita</p>
-                        <p class="product_description">Baño Oro 18k <br> 149.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
-        </section>
+              <a href="">
+                <img
+                  src="collar_linked_margarita.jpg"
+                  alt="collar_linked_margarita"
+                />
+                <img
+                  src="collar_linked_margarita2.webp"
+                  alt="collar_linked_margarita2"
+                />
+                <p class="product_title">Collar Linked Margarita</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  149.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
 
-        <section class="articles">
             <article class="rosario_medalla_milagrosa">
-                    <a href="">
-                        <img src="collar_rosario_medalla_milagrosa.webp" alt="collar_rosario_medalla_milagrosa">
-                        <img src="collar_rosario_medalla_milagrosa2.webp" alt="collar_rosario_medalla_milagrosa2">
-                        <p class="product_title">Collar Rosario Medalla Milagrosa</p>
-                        <p class="product_description">Baño Oro 18k <br> 200.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
-        </section>
+              <a href="">
+                <img
+                  src="collar_rosario_medalla_milagrosa.webp"
+                  alt="collar_rosario_medalla_milagrosa"
+                />
+                <img
+                  src="collar_rosario_medalla_milagrosa2.webp"
+                  alt="collar_rosario_medalla_milagrosa2"
+                />
+                <p class="product_title">Collar Rosario Medalla Milagrosa</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  200.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
 
-        <section class="articles">
             <article class="cadena_plata">
-                    <a href="">
-                        <img src="collar_cadena_plata.jpg" alt="collar_cadena_plata">
-                        <img src="collar_cadena_plata2.webp" alt="collar_cadena_plata2">
-                        <p class="product_title">Collar Cadena Plata</p>
-                        <p class="product_description">Baño Oro 18k <br> 69.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
+              <a href="">
+                <img src="collar_cadena_plata.jpg" alt="collar_cadena_plata" />
+                <img
+                  src="collar_cadena_plata2.webp"
+                  alt="collar_cadena_plata2"
+                />
+                <p class="product_title">Collar Cadena Plata</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  69.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="lofoten_island">
+              <a href="">
+                <img
+                  src="collar_lofoten_island.jpg"
+                  alt="collar_lofoten_island"
+                />
+                <img
+                  src="collar_lofoten_island2.webp"
+                  alt="collar_lofoten_island2"
+                />
+                <p class="product_title">Collar Lofoten Island</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  99.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+          </div>
         </section>
 
         <section class="articles">
-            <article class="lofoten_island">
-                    <a href="">
-                        <img src="collar_lofoten_island.jpg" alt="collar_lofoten_island">
-                        <img src="collar_lofoten_island2.webp" alt="collar_lofoten_island2">
-                        <p class="product_title">Collar Lofoten Island</p>
-                        <p class="product_description">Baño Oro 18k <br> 99.00€</p>
-                    </a>
-               </article>
-               <!-- <button>Añadir al carrito</button> -->
+          <h3 id="anillos">Anillos</h3>
+
+          <div class="products">
+            <article class="bulky_sepalo">
+              <a href="">
+                <img src="anillo_bulky_sepalo.jpg" alt="anillo_bulky_sepalo" />
+                <img
+                  src="anillo_bulky_sepalo2.jpg"
+                  alt="anillo_bulky_sepalo2"
+                />
+                <p class="product_title">
+                  Anillo Bulky Sepalo <span id="icon_new">New</span>
+                </p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  149.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="fresia">
+              <a href="">
+                <img src="anillo_fresia.webp" alt="anillo_fresia" />
+                <img src="anillo_fresia2.webp" alt="anillo_fresia2" />
+                <p class="product_title">Anillo Fresia</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  129.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="succulenta_milii">
+              <a href="">
+                <img
+                  src="anillo_succulenta_milii.webp"
+                  alt="anillo_succulenta_milii"
+                />
+                <img
+                  src="anillo_succulenta_milii2.webp"
+                  alt="anillo_succulenta_milii2"
+                />
+                <p class="product_title">Anillo Succulenta Milii</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  149.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="succulenta_bulky">
+              <a href="">
+                <img
+                  src="anillo_succulenta_bulky.webp"
+                  alt="anillo_succulenta_bulky"
+                />
+                <img
+                  src="anillo_succulenta_bulky2.webp"
+                  alt="anillo_succulenta_bulky2"
+                />
+                <p class="product_title">Anillo Succulenta Bulky</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  129.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="succulenta_bulky">
+              <a href="">
+                <img
+                  src="anillo_bulky_jellyfish.webp"
+                  alt="anillo_bulky_jellyfish"
+                />
+                <img
+                  src="anillo_bulky_jellyfish2.webp"
+                  alt="anillo_bulky_jellyfish2"
+                />
+                <p class="product_title">Anillo Bulky Jellyfish</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  199.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="cool">
+              <a href="">
+                <img src="anillo_cool.webp" alt="anillo_cool" />
+                <img src="anillo_cool2.webp" alt="anillo_cool2" />
+                <p class="product_title">Anillo Cool</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  79.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="bosphorus_bulky">
+              <a href="">
+                <img
+                  src="anillo_bosphorus_bulky.webp"
+                  alt="anillo_bosphorus_bulky"
+                />
+                <img
+                  src="anillo_bosphorus_bulky2.webp"
+                  alt="anillo_bosphorus_bulky2"
+                />
+                <p class="product_title">Anillo Bosphorus Bulky</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  129.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="sea_creatures_bulky">
+              <a href="">
+                <img
+                  src="anillo_sea_creatures_bulky.webp"
+                  alt="anillo_sea_creatures_bulky"
+                />
+                <img
+                  src="anillo_sea_creatures_bulky2.webp"
+                  alt="anillo_sea_creatures_bulky2"
+                />
+                <p class="product_title">Anillo Sea Creatures Bulky</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  149.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+          </div>
         </section>
-            </div>
 
-            <h3 id="anillos">Anillos</h3>
+        <section class="articles">
+          <h3 id="pulseras">Pulseras</h3>
 
-            <div class="anillos">
+          <div class="products">
+            <article class="rigido_nefertiti">
+              <a href="">
+                <img
+                  src="brazalete_rigido_nefertiti.webp"
+                  alt="brazalete_rigido_nefertiti"
+                />
+                <img
+                  src="brazalete_rigido_nefertiti2.webp"
+                  alt="brazalete_rigido_nefertiti2"
+                />
+                <p class="product_title">
+                  Brazalete Rígido Nefertiti <span id="icon_new">New</span>
+                </p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  149.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
 
-            <section class="articles">
-                <article class="bulky_sepalo">
-                        <a href="">
-                            <img src="anillo_bulky_sepalo.jpg" alt="anillo_bulky_sepalo">
-                            <img src="anillo_bulky_sepalo2.jpg" alt="anillo_bulky_sepalo2">
-                            <p class="product_title">Anillo Bulky Sepalo</p>
-                            <p class="product_description">Baño Oro 18k <br> 149.00€</p>
-                        </a>
-                   </article>
-                   <!-- <button>Añadir al carrito</button> -->
-            </section>
-            </div>
+            <article class="sepalo">
+              <a href="">
+                <img src="brazalete_sepalo.jpg" alt="brazalete_sepalo" />
+                <img src="brazalete_sepalo2.jpg" alt="brazalete_sepalo2" />
+                <p class="product_title">
+                  Brazalete Sepalo <span id="icon_new">New</span>
+                </p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  199.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
 
-        </div>
-        
-    </div>
-    
-</body>
+            <article class="dragonfly">
+              <a href="">
+                <img src="brazalete_dragonfly.jpg" alt="brazalete_dragonfly" />
+                <img
+                  src="brazalete_dragonfly2.webp"
+                  alt="brazalete_dragonfly2"
+                />
+                <p class="product_title">Brazalete Dragonfly</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  199.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="pulsera_apodemia">
+              <a href="">
+                <img src="pulsera_apodemia.jpg" alt="pulsera_apodemia" />
+                <img src="pulsera_apodemia2.webp" alt="pulsera_apodemia2" />
+                <p class="product_title">Pulsera Apodemia</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  49.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="rigido_sand_dust_band">
+              <a href="">
+                <img
+                  src="brazalete_rigido_sand_dust_band.jpg"
+                  alt="brazalete_rigido_sand_dust_band"
+                />
+                <img
+                  src="brazalete_rigido_sand_dust_band2.webp"
+                  alt="brazalete_rigido_sand_dust_band2"
+                />
+                <p class="product_title">Brazalete Rígido Sand Dust Band</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  129.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="plana">
+              <a href="">
+                <img src="pulsera_plana.webp" alt="pulsera_plana" />
+                <img src="pulsera_plana2.webp" alt="pulsera_plana2" />
+                <p class="product_title">Pulsera Plana</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  49.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="guadaloupe_tuttifrutti">
+              <a href="">
+                <img
+                  src="pulsera_guadaloupe_tuttifrutti.jpg"
+                  alt="pulsera_guadaloupe_tuttifrutti"
+                />
+                <img
+                  src="pulsera_guadaloupe_tuttifrutti2.jpg"
+                  alt="pulsera_guadaloupe_tuttifrutti2"
+                />
+                <p class="product_title">Pulsera Guadaloupe Tutti Frutti</p>
+                <p class="product_description">
+                  Baño Oro 18k <br />
+                  79.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="articles">
+          <h3 id="relojeria">Relojería</h3>
+
+          <div class="products">
+            <article class="woodland_chrono_brown_coffee">
+              <a href="">
+                <img
+                  src="reloj_woodland_chrono_brown_coffee.webp"
+                  alt="reloj_woodland_chrono_brown_coffee"
+                />
+                <img
+                  src="reloj_woodland_chrono_brown_coffee2.jpg"
+                  alt="reloj_woodland_chrono_brown_coffee2"
+                />
+                <p class="product_title">Reloj Woodland Chrono Brown</p>
+                <p class="product_description">
+                  Relojería <br />
+                  229.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="woodland_chrono_hunting_green">
+              <a href="">
+                <img
+                  src="reloj_woodland_chrono_hunting_green.webp"
+                  alt="reloj_woodland_chrono_hunting_green"
+                />
+                <img
+                  src="reloj_woodland_chrono_hunting_green2.jpg"
+                  alt="reloj_woodland_chrono_hunting_green2"
+                />
+                <p class="product_title">Reloj Woodland Chrono Hunting</p>
+                <p class="product_description">
+                  Relojería <br />
+                  189.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="reloj_dune">
+              <a href="">
+                <img src="reloj_dune.jpg" alt="reloj_dune" />
+                <img src="reloj_dune2.jpg" alt="reloj_dune2" />
+                <p class="product_title">Reloj Dune</p>
+                <p class="product_description">
+                  Silver Oyster | Black Iron | Champagne <br />
+                  149.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="caja_dune_champagne">
+              <a href="">
+                <img src="caja_dune_champagne.jpg" alt="caja_dune_champagne" />
+                <img
+                  src="caja_dune_champagne2.jpg"
+                  alt="caja_dune_champagne2"
+                />
+                <p class="product_title">Caja Dune Champagne</p>
+                <p class="product_description">
+                  Relojería <br />
+                  120.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="correa_dune_champagne">
+              <a href="">
+                <img
+                  src="correa_dune_champagne.jpg"
+                  alt="correa_dune_champagne"
+                />
+                <img
+                  src="correa_dune_champagne2.jpg"
+                  alt="correa_dune_champagne2"
+                />
+                <p class="product_title">Correa Dune Champagne</p>
+                <p class="product_description">
+                  Relojería <br />
+                  29.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="green_mermaid_python">
+              <a href="">
+                <img
+                  src="correa_green_mermaid_python.jpg"
+                  alt="correa_green_mermaid_python"
+                />
+                <img
+                  src="correa_green_mermaid_python2.webp"
+                  alt="correa_green_mermaid_python2"
+                />
+                <p class="product_title">Correa Green Mermaid Python</p>
+                <p class="product_description">
+                  Relojería <br />
+                  59.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="nylon_dry_sand">
+              <a href="">
+                <img
+                  src="correa_nylon_dry_sand.jpg"
+                  alt="correa_nylon_dry_sand"
+                />
+                <img
+                  src="correa_nylon_dry_sand2.webp"
+                  alt="correa_nylon_dry_sand2"
+                />
+                <p class="product_title">Correa Nylon Dry Sand</p>
+                <p class="product_description">
+                  Relojería <br />
+                  29.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="grabado_reloj">
+              <a href="">
+                <img src="grabado_reloj.webp" alt="grabado_reloj" />
+                <img src="grabado_reloj2.webp" alt="grabado_reloj2" />
+                <p class="product_title">
+                  Grabado Reloj <span id="icon_new">New</span>
+                </p>
+                <p class="product_description">
+                  Grabado <br />
+                  10.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="articles">
+          <h3 id="alta_joyeria">
+            Alta Joyería <br />
+            <span id="reciclado"
+              >Realizado de una forma sostenible con oro y plata 100%
+              reciclado</span
+            >
+          </h3>
+
+          <div class="products">
+            <article class="anillo_cadena">
+              <a href="">
+                <img src="anillo_cadena.webp" alt="anillo_cadena" />
+                <img src="anillo_cadena2.webp" alt="anillo_cadena2" />
+                <p class="product_title">
+                  Anillo Cadena <span id="icon_new">New</span>
+                </p>
+                <p class="product_description">
+                  Plata 925 | Topacio Blanco<br />
+                  149.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="pendientes_aro_forever">
+              <a href="">
+                <img
+                  src="pendientes_aro_forever.webp"
+                  alt="pendientes_aro_forever"
+                />
+                <img
+                  src="pendientes_aro_forever2.webp"
+                  alt="pendientes_aro_forever2"
+                />
+                <p class="product_title">Pendientes Aro Forever</p>
+                <p class="product_description">
+                  Oro Macizo 9k | Esmeralda<br />
+                  359.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="pendientes_cadena_forever">
+              <a href="">
+                <img
+                  src="pendientes_cadena_forever.webp"
+                  alt="pendientes_cadena_forever"
+                />
+                <img
+                  src="pendientes_cadena_forever2.webp"
+                  alt="pendientes_cadena_forever2"
+                />
+                <p class="product_title">Pendientes Cadena Forever</p>
+                <p class="product_description">
+                  Oro Macizo 9k | Circonita Blanca<br />
+                  499.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="pendientes_mariposa">
+              <a href="">
+                <img src="pendientes_mariposa.webp" alt="pendientes_mariposa" />
+                <img
+                  src="pendientes_mariposa2.webp"
+                  alt="pendientes_mariposa2"
+                />
+                <p class="product_title">Pendientes Mariposa</p>
+                <p class="product_description">
+                  Oro Macizo 18k | Diamantes | Turmalinas<br />
+                  2100.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="collar_cruz">
+              <a href="">
+                <img src="collar_cruz.jpg" alt="collar_cruz" />
+                <img src="collar_cruz2.jpg" alt="collar_cruz2" />
+                <p class="product_title">Collar Cruz</p>
+                <p class="product_description">
+                  Oro Macizo 9k | Diamante <br />
+                  599.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="collar_mariposa">
+              <a href="">
+                <img src="collar_mariposa.webp" alt="collar_mariposa" />
+                <img src="collar_mariposa2.jpg" alt="collar_mariposa2" />
+                <p class="product_title">Collar Mariposa</p>
+                <p class="product_description">
+                  Oro Macizo 18k | Diamantes | Turmalinas<br />
+                  1900.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="abierto_forever">
+              <a href="">
+                <img
+                  src="anillo_abierto_forever.webp"
+                  alt="anillo_abierto_forever"
+                />
+                <img
+                  src="anillo_abierto_forever2.webp"
+                  alt="anillo_abierto_forever2"
+                />
+                <p class="product_title">Anillo Abierto Forever</p>
+                <p class="product_description">
+                  Oro Macizo 9k | Tsavorita <br />
+                  699.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+
+            <article class="anillo_mariposa">
+              <a href="">
+                <img src="anillo_mariposa.webp" alt="anillo_mariposa" />
+                <img src="anillo_mariposa2.jpg" alt="anillo_mariposa2" />
+                <p class="product_title">Anillo Mariposa Forever</p>
+                <p class="product_description">
+                  Oro Macizo 18k | Diamantes | Turmalinas<br />
+                  2000.00€
+                </p>
+              </a>
+              <button>Añadir al carrito</button>
+            </article>
+          </div>
+        </section>
+      </div>
+    <section class="descuento">
+      <h2>10% de descuento en una selección de artículos*</h2>
+      <h1 id="newsletter">¡Suscríbete a la newsletter!</h1>
+      <div class="email">
+        <label for="Email">Introduce tu email</label>
+        <input type="email" id="email" placeholder="" name="email" required />
+        <!-- <button type="submit">Enviar</button> -->
+      </div>
+    </section>
+    <section class="contact">
+      <h4>Contacto</h4>
+      <p id="contacto">
+        <span class="material-symbols-outlined">phone_iphone</span
+        ><a href="">971 000 000</a> |
+        <span class="material-symbols-outlined">mail</span
+        ><a href="">hello@mi_tienda.com</a> | Venta online |
+        <span class="material-symbols-outlined">location_on</span
+        ><a href="">Tiendas</a>
+      </p>
+      <br />
+      <p id="contacto">De Lunes a Viernes de 09:30 a 22:00</p>
+    </section>
+    <section class="foot">
+      <div class="enlaces_foot">
+        <nav id="guia_compra">
+          <ul>
+            <h5>Guía de compra</h5>
+            <li><a href="">Preguntas frecuentes</a></li>
+            <li><a href="">Pago</a></li>
+            <li><a href="">Envío</a></li>
+            <li><a href="">Devoluciones</a></li>
+            <li><a href="">Cambios</a></li>
+            <li><a href="">Ticket regalo</a></li>
+            <li><a href="">Disponibilidad de articulos</a></li>
+            <li><a href="">Modificaciones de datos y pedidos</a></li>
+          </ul>
+        </nav>
+
+        <nav id="servicios">
+          <ul>
+            <h5>Servicios</h5>
+            <li><a href="">Affinity Card</a></li>
+            <li><a href="">Tarjeta regalo</a></li>
+            <li><a href="">Exclusividad en tienda físicas</a></li>
+          </ul>
+        </nav>
+
+        <nav id="políticas">
+          <ul>
+            <h5>Políticas</h5>
+            <li><a href="">Política medioambiental</a></li>
+            <li><a href="">Política de privacidad</a></li>
+            <li><a href="">Condiciones de compra</a></li>
+            <li><a href="">Política de cookies</a></li>
+          </ul>
+        </nav>
+
+        <nav id="social">
+          <ul>
+            <h5>Social</h5>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">X</a></li>
+            <li><a href="">Youtube</a></li>
+            <li><a href="">App Store</a></li>
+            <li><a href="">Google Play</a></li>
+          </ul>
+        </nav>
+
+        <nav id="pago">
+          <ul>
+            <h5>Metodos de pago</h5>
+            <li><a href="">Visa</a></li>
+            <li><a href="">Mastercard</a></li>
+            <li><a href="">AMEX</a></li>
+            <li><a href="">Affinity</a></li>
+            <li><a href="">PayPal</a></li>
+            <li><a href="">Tarjeta regalo</a></li>
+            <li><a href="">Pago en tienda</a></li>
+            <li><a href="">Transferencia bancaria</a></li>
+            <li><a href="">Bizum</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="copyright"><p>&copy Mi_Tienda 2023</p></div>
+    </section>
+</div>
+  </body>
 </html>

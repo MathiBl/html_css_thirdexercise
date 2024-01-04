@@ -1,378 +1,1110 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 480px) and (max-width: 980px) {
+  .main_container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .main_container {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: 90%;
-    margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
+  margin: 20px auto;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
+.left_menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-size: small;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: beige;
+  z-index: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  /* font-weight: bold; */
+}
+
+nav a:hover {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+#new_product:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  color: red;
+}
+
+#fine_jewellery:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  color: goldenrod;
+}
+
+.menu_top {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+}
+
+.menu_top img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.menu_top_right {
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: -50px;
+}
+
+.menu_top_right input {
+  border-style: none;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
 }
 
 h1 {
-    font-weight: bold;
-    text-align: center;
+  font-weight: bold;
+  text-align: center;
 }
 
 h3 {
-    color: #545559;
-    padding: 10px;
-    font-weight: bold;
-    text-align: center;
-    border-top: 1px solid #545559;
-    border-bottom: 1px solid #545559;
-
+  color: #545559;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-.articles_container div {
-    display: flex;
-    flex-wrap: wrap;
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 5%;
+  row-gap: 30px;
 }
 
-section {
-    width: 20%;
-    padding: 2%;
+article {
+  display: flex;
+  flex-direction: column;
+  width: 21%;
+  margin: auto;
 }
 
-img {
-    width: 275px;
-    height: 325px;
+article img {
+  width: 100%;
+  height: 330px;
 }
 
-.articles {
-    display: flex;
-    flex-wrap: wrap;
+#icon_new {
+  border: 1px solid red;
+  color: red;
+  text-transform: uppercase;
+  font-size: smaller;
+  padding: 2px;
+}
+
+article button {
+  width: 100%;
+  height: 30px;
+  background-color: #1b1b1b;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+article button:hover {
+  cursor: pointer;
+  background-color: beige;
+  border: 1px solid #1b1b1b;
+  border-radius: 5px;
+  color: #1b1b1b;
 }
 
 article a {
-    text-decoration: none;
-    line-height: 25px;
+  text-decoration: none;
+  line-height: 25px;
 }
 
 .product_title {
-    color: #545559;
-    font-weight: bold;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+  color: #545559;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .product_description {
-    color: #545559;
-    font-size: 12px;
+  color: #545559;
+  font-size: 12px;
 }
 
-/* ARTICLE SEPALO */
-
-.sepalo {
-    position: relative;
+#reciclado {
+  color: goldenrod;
+  font-weight: bold;
+  font-size: 15px;
 }
 
-.sepalo img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
-}
-
-.sepalo:hover img:nth-child(2) {
-    opacity: 1;
-}
-
-/* ARTICLE BULKY SEPALO */
-
-.bulky_sepalo {
-    position: relative;
-}
-
-.bulky_sepalo img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
-}
-
-.bulky_sepalo:hover img:nth-child(2) {
-    opacity: 1;
-}
+/* PENDIENTES */
 
 /* ARTICLE JELLYFISH */
 
 .jellyfish {
-    position: relative;
+  position: relative;
 }
 
 .jellyfish img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .jellyfish:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* ARTICLE APODEMIA */
 
 .apodemia {
-    position: relative;
+  position: relative;
 }
 
 .apodemia img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .apodemia:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* ARTICLE ARO SEPALO */
 
 .aro_sepalo {
-    position: relative;
+  position: relative;
 }
 
 .aro_sepalo img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .aro_sepalo:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* ARTICLE NEFERTITI */
 
 .nefertiti {
-    position: relative;
+  position: relative;
 }
 
 .nefertiti img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .nefertiti:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* ARTICLE MARGARITA */
 
 .margarita {
-    position: relative;
+  position: relative;
 }
 
 .margarita img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .margarita:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* ARTICLE ARO SUCCULENTA */
 
 .aro_succulenta {
-    position: relative;
+  position: relative;
 }
 
 .aro_succulenta img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .aro_succulenta:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* ARTICLE APODEMIA KARNER */
 
 .apodemia_karner {
-    position: relative;
+  position: relative;
 }
 
 .apodemia_karner img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .apodemia_karner:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
+
 /* ARTICLE LARGOS LOFOTEN ISLAND */
 
 .largos_lofoten_island {
-    position: relative;
+  position: relative;
 }
 
 .largos_lofoten_island img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .largos_lofoten_island:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
+
+/* COLLARES */
 
 /* ARTICLE ROLL_VINE */
 
 .roll_vine {
-    position: relative;
+  position: relative;
 }
 
 .roll_vine img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .roll_vine:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* ARTICLE TRIPLE_SEPALO */
 
 .triple_sepalo {
-    position: relative;
+  position: relative;
 }
 
 .triple_sepalo img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .triple_sepalo:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* ARTICLE SAND DUST */
 
 .sand_dust {
-    position: relative;
+  position: relative;
 }
 
 .sand_dust img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .sand_dust:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* ARTICLE LINKED MARGARITA */
 
 .linked_margarita {
-    position: relative;
+  position: relative;
 }
 
 .linked_margarita img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .linked_margarita:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* ARTICLE ROSARIO MEDALLA MILAGROSA */
 
 .rosario_medalla_milagrosa {
-    position: relative;
+  position: relative;
 }
 
 .rosario_medalla_milagrosa img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .rosario_medalla_milagrosa:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* ARTICLE CADENA PLATA */
 
 .cadena_plata {
-    position: relative;
+  position: relative;
 }
 
 .cadena_plata img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .cadena_plata:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* ARTICLE LOFOTEN ISLAND */
 
 .lofoten_island {
-    position: relative;
+  position: relative;
 }
 
 .lofoten_island img:nth-child(2) {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    opacity: 0;
-    transition: opacity ease 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
 }
 
 .lofoten_island:hover img:nth-child(2) {
-    opacity: 1;
+  opacity: 1;
 }
 
+/* ANILLOS */
 
+/* ARTICLE BULKY SEPALO */
 
+.bulky_sepalo {
+  position: relative;
+}
+
+.bulky_sepalo img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.bulky_sepalo:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE FRESIA */
+
+.fresia {
+  position: relative;
+}
+
+.fresia img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.fresia:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE SUCCULENTA MILII */
+
+.succulenta_milii {
+  position: relative;
+}
+
+.succulenta_milii img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.succulenta_milii:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE SUCCULENTA BULKY */
+
+.succulenta_bulky {
+  position: relative;
+}
+
+.succulenta_bulky img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.succulenta_bulky:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE BULKY JELLYFISH */
+
+.bulky_jellyfish {
+  position: relative;
+}
+
+.bulky_jellyfish img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.bulky_jellyfish:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE COOL */
+
+.cool {
+  position: relative;
+}
+
+.cool img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.cool:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE BOSPHORUS_BULKY */
+
+.bosphorus_bulky {
+  position: relative;
+}
+
+.bosphorus_bulky img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.bosphorus_bulky:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE SEA_CREATURES_BULKY */
+
+.sea_creatures_bulky {
+  position: relative;
+}
+
+.sea_creatures_bulky img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.sea_creatures_bulky:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* PULSERAS */
+
+/* ARTICLE SEPALO */
+
+.sepalo {
+  position: relative;
+}
+
+.sepalo img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.sepalo:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE DRAGONFLY */
+
+.dragonfly {
+  position: relative;
+}
+
+.dragonfly img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.dragonfly:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE PULSERA APODEMIA */
+
+.pulsera_apodemia {
+  position: relative;
+}
+
+.pulsera_apodemia img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.pulsera_apodemia:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE BRAZALETE RÍGIDO SAND DUST BAND */
+
+.rigido_sand_dust_band {
+  position: relative;
+}
+
+.rigido_sand_dust_band img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.rigido_sand_dust_band:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE BRAZALETE RÍGIDO NEFERTITI */
+
+.rigido_nefertiti {
+  position: relative;
+}
+
+.rigido_nefertiti img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.rigido_nefertiti:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE PULSERA PLANA */
+
+.plana {
+  position: relative;
+}
+
+.plana img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.plana:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE GUADALOUPE TUTTI FRUTTI */
+
+.guadaloupe_tuttifrutti {
+  position: relative;
+}
+
+.guadaloupe_tuttifrutti img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.guadaloupe_tuttifrutti:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* RELOJERÍA */
+
+/* ARTICLE RELOJ WOODLAND CHRONO BROWN COFFEE */
+
+.woodland_chrono_brown_coffee {
+  position: relative;
+}
+
+.woodland_chrono_brown_coffee img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.woodland_chrono_brown_coffee:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE RELOJ WOODLAND CHRONO HUNTING GREEN */
+
+.woodland_chrono_hunting_green {
+  position: relative;
+}
+
+.woodland_chrono_hunting_green img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.woodland_chrono_hunting_green:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE RELOJ DUNE */
+
+.reloj_dune {
+  position: relative;
+}
+
+.reloj_dune img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.reloj_dune:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE CAJA DUNE CHAMPAGNE */
+
+.caja_dune_champagne {
+  position: relative;
+}
+
+.caja_dune_champagne img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.caja_dune_champagne:hover img:nth-child(2) {
+  opacity: 1;
+}
+/* ARTICLE CORREA DUNE CHAMPAGNE */
+
+.correa_dune_champagne {
+  position: relative;
+}
+
+.correa_dune_champagne img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.correa_dune_champagne:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE CORREA GREEN MERMAID PYTHON */
+
+.green_mermaid_python {
+  position: relative;
+}
+
+.green_mermaid_python img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.green_mermaid_python:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE CORREA NYLON DRY SAND */
+
+.nylon_dry_sand {
+  position: relative;
+}
+
+.nylon_dry_sand img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.nylon_dry_sand:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE GRABADO RELOJ */
+
+.grabado_reloj {
+  position: relative;
+}
+
+.grabado_reloj img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.grabado_reloj:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ALTA JOYERÍA */
+
+/* ARTICLE PENDIENTES ARO FOREVER */
+
+.pendientes_aro_forever {
+  position: relative;
+}
+
+.pendientes_aro_forever img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.pendientes_aro_forever:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE PENDIENTES CADENA FOREVER */
+
+.pendientes_cadena_forever {
+  position: relative;
+}
+
+.pendientes_cadena_forever img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.pendientes_cadena_forever:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE PENDIENTES MARIPOSA */
+
+.pendientes_mariposa {
+  position: relative;
+}
+
+.pendientes_mariposa img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.pendientes_mariposa:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE COLLAR CRUZ */
+
+.collar_cruz {
+  position: relative;
+}
+
+.collar_cruz img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.collar_cruz:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE COLLAR MARIPOSA */
+
+.collar_mariposa {
+  position: relative;
+}
+
+.collar_mariposa img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.collar_mariposa:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE ABIERTO FOREVER */
+
+.abierto_forever {
+  position: relative;
+}
+
+.abierto_forever img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.abierto_forever:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* ARTICLE MARIPOSA FOREVER */
+
+.anillo_mariposa {
+  position: relative;
+}
+
+.anillo_mariposa img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.anillo_mariposa:hover img:nth-child(2) {
+  opacity: 1;
+}
+/* ARTICLE ANILLO CADENA */
+
+.anillo_cadena {
+  position: relative;
+}
+
+.anillo_cadena img:nth-child(2) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.anillo_cadena:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* CONTACTO */
+
+.descuento {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #545559;
+}
+
+#newsletter {
+  color: red;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-top: 10px;
+  width: 50%;
+  border-style: none;
+  border-bottom: 1px solid #545559;
+}
+
+h4 {
+  text-align: center;
+  color: #545559;
+}
+
+.contact {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: auto;
+  margin-top: 40px;
+  /* padding: 20px; */
+}
+
+#contacto {
+  margin: auto;
+  text-align: center;
+  line-height: 15px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+.contact span {
+  vertical-align: middle;
+}
+
+/* FOOTER */
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  border-top: 1px solid #1b1b1b;
+  width: 90%;
+}
+
+.enlaces_foot {
+  display: flex;
+  flex-direction: row;
+}
+
+.enlaces_foot nav {
+  width: 20%;
+  justify-content: center;
+}
+
+.foot h5 {
+  text-transform: uppercase;
+  color: #545559;
+  font-size: 12px;
+}
+
+.foot ul {
+  list-style-type: none;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+#copyright {
+  font-size: 12px;
+  color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+}
